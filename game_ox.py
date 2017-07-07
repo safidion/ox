@@ -67,7 +67,7 @@ class Board:
             self.testbut[7] = self.current_player
         elif test == ".!button9":
             self.testbut[8] = self.current_player
-        print(self.testbut)
+        #print(self.testbut)
         self.check_victory()
 
     def check_victory(self):
@@ -97,4 +97,4 @@ class Board:
             print("vin")
             messagebox.showinfo("Wygrana", "Gratulacje!!! \nWygrał znak\n" + self.testbut[2])
         else:
-            print("no vin")
+            return False
