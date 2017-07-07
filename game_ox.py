@@ -41,7 +41,7 @@ class Board:
                 self.przyciski[i][j].configure(text="")
 
     def xo(self, przycisk, *argv):
-        print(przycisk)
+        # print(przycisk)
         if przycisk["text"] == "":
             if self.current_player == self.player_o:
                 self.current_player = self.player_x
@@ -67,7 +67,7 @@ class Board:
             self.testbut[7] = self.current_player
         elif test == ".!button9":
             self.testbut[8] = self.current_player
-        #print(self.testbut)
+        # print(self.testbut)
         self.check_victory()
 
     def check_victory(self):
