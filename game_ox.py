@@ -98,4 +98,3 @@ class Board:
             messagebox.showinfo("Wygrana", "Gratulacje!!! \nWygrał znak\n" + self.testbut[2])
         else:
             print("no vin")
-
