@@ -73,7 +73,7 @@ class Board:
     def check_victory(self):
         # print(self.testbut)
         if self.testbut[0] == self.testbut[1] == self.testbut[2]:
-            print("vin!")
+            print("vin!!")
             messagebox.showinfo("Wygrana", "Gratulacje!!! \nWygrał znak\n" + self.testbut[0])
         elif self.testbut[3] == self.testbut[4] == self.testbut[5]:
             messagebox.showinfo("Wygrana", "Gratulacje!!! \nWygrał znak\n" + self.testbut[3])
