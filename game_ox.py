@@ -1,4 +1,4 @@
-from tkinter import Tk, Label, Button, Entry, IntVar, StringVar, DISABLED, NORMAL, END, W, E, font, messagebox
+from tkinter import Tk, Button, messagebox
 
 
 class Game:
