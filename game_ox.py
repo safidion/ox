@@ -76,25 +76,18 @@ class Board:
             print("vin")
             messagebox.showinfo("Wygrana", "Gratulacje!!! \nWygrał znak\n" + self.testbut[0])
         elif self.testbut[3] == self.testbut[4] == self.testbut[5]:
-            print("vin")
             messagebox.showinfo("Wygrana", "Gratulacje!!! \nWygrał znak\n" + self.testbut[3])
         elif self.testbut[6] == self.testbut[7] == self.testbut[8]:
-            print("vin")
             messagebox.showinfo("Wygrana", "Gratulacje!!! \nWygrał znak\n" + self.testbut[6])
         elif self.testbut[0] == self.testbut[3] == self.testbut[6]:
-            print("vin")
             messagebox.showinfo("Wygrana", "Gratulacje!!! \nWygrał znak\n" + self.testbut[0])
         elif self.testbut[1] == self.testbut[4] == self.testbut[7]:
-            print("vin")
             messagebox.showinfo("Wygrana", "Gratulacje!!! \nWygrał znak\n" + self.testbut[1])
         elif self.testbut[2] == self.testbut[5] == self.testbut[8]:
-            print("vin")
             messagebox.showinfo("Wygrana", "Gratulacje!!! \nWygrał znak\n" + self.testbut[2])
         elif self.testbut[0] == self.testbut[4] == self.testbut[8]:
-            print("vin")
             messagebox.showinfo("Wygrana", "Gratulacje!!! \nWygrał znak\n" + self.testbut[0])
         elif self.testbut[2] == self.testbut[4] == self.testbut[6]:
-            print("vin")
             messagebox.showinfo("Wygrana", "Gratulacje!!! \nWygrał znak\n" + self.testbut[2])
         else:
             return False
