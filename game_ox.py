@@ -40,7 +40,6 @@ class Board:
             for j in range(3):
                 self.przyciski[i][j].configure(text="")
 
-
     def xo(self, przycisk, *argv):
         print(przycisk)
         if przycisk["text"] == "":
