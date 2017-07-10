@@ -1,4 +1,4 @@
-from tkinter import Tk, Button, messagebox
+from tkinter import Tk, Button, Label, messagebox, Toplevel
 
 
 class Game:
@@ -23,6 +23,9 @@ class Board:
                                               command=lambda i=i, j=j: self.xo(self.przyciski[i][j],
                                                                                self.current_player))
                 self.przyciski[i][j].grid(row=i, column=j)
+
+        self.button_bonus = Button(master, text="Gracze", command=lambda: self.popup_bonus())
+        self.button_bonus.grid(row=5, column=0, columnspan=3)
 
         self.reset_button = Button(master, text="RESET", width=24, height=2, command=lambda: self.reset())
         self.quit_button = Button(master, text="Wyjście", width=24, height=2, command=lambda: self.quit())
@@ -91,3 +94,10 @@ class Board:
             messagebox.showinfo("Wygrana", "Gratulacje!!! \nWygrał znak\n" + self.testbut[2])
         else:
             return False
+
+    def popup_bonus(self):
+        self.win = Toplevel()
+        self.win.wm_title("Window")
+
+        self.l = Label(self.win, text="Graczu 1 imię:")
+        self.l.grid(row=0, column=0)
